@@ -17,9 +17,10 @@
 -DELETE("/students/{id})- to delete the student data from database
 
 
-- common Error is handle by the status code of 500 i.e Internal server error
+- common Error is handled by the status code of 500 i.e Internal server error
 - successful response status code - 200
-- if Id is incomplete or not found - status code - 404
+- if Id is changet or not found - status code - 404
+- if Id is missing values or has less character than required - Internal server error
 
 # NOTE
 -Thankyou for giving this opportunity for internship assignemnt, gain some knowledge and hoping to look forward working with you and learn a lot from you.

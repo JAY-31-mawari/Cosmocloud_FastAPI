@@ -1,4 +1,3 @@
-from typing import Optional
 from pydantic import BaseModel
 
 class Address(BaseModel):
@@ -10,7 +9,11 @@ class Student(BaseModel):
     age: int
     address: Address
 
-class Student_Patch(BaseModel):
-    name: Optional[str]
-    age: Optional[int]
-    address: Optional[Address]
+class UpdateAddress(BaseModel):
+    city: str=None
+    country: str=None
+
+class UpdateStudent(BaseModel):
+    name: str = None
+    age: int = None
+    address: UpdateAddress =None
